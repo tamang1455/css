@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>relativeabsolute</title>
+	<style type="text/css">
+		.demo{
+			width: 700px;
+			height: 500px;
+			margin: auto;
+			box-shadow: 10px 10px 10px skyblue;
+			position: relative;
+		}
+		img{
+			height: 100%;
+			width: 100%;
+		}
+		label{
+			border: none;
+			background-color: white;
+			color: skyblue;
+			font-size: 35px;
+			right: 50%;
+			bottom: 10%;
+			position: absolute;
+			display:none;
+		}
+		label:hover{
+			background-color: skyblue;
+			color: blue;
+		}
+	/*	label{
+			display: none;
+		}*/
+		.demo:hover label{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+<div class="demo">
+	<img src="a.jpg">
+	<label>a.jpg</label>
+</div>
+</body>
+</html>

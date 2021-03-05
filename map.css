@@ -1,0 +1,62 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.nav{
+	width: 100%;
+	background-color: dodgerblue;
+}
+ul{
+	display: flex;
+
+}
+ul li{
+	list-style: none;
+	position: relative; 
+}
+ul li a{
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 20px;
+	padding: 20px;
+	display: inline-block;
+	color: white;
+}
+ul li a:hover{
+	background-color: white;
+	color: dodgerblue;
+}
+.dropdown{
+	position: absolute;
+	width: 100px;
+	background-color: dodgerblue;
+	display: block;
+	display: none;
+}
+ul li:hover .dropdown{
+	display: block;
+}
+.dropdown li a{
+	display: block;
+}
+ul li ul li ul li a{
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 20px;
+	padding: 20px;
+	display: inline-block;
+	color: white;
+}
+.right{
+	position: absolute;
+	width: 100px;
+	left: 100%;
+	background-color: lightgreen;
+	
+	display: none;	
+}
+.dropdown li:hover .right{
+	display: block;
+}
+

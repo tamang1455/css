@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>relative absolute</title>
+	<style type="text/css">
+		.demo{
+			width: 700px;
+			height: 500px;
+			margin: auto;
+			position: relative;	
+		}
+		img{
+			height: 100%;
+			width: 100%;
+		}
+		.next{
+			border: none;
+			background-color: orange;
+			color: white;
+			font-size: 35px;
+			position: absolute;
+			right: 0;
+			top: 40%;
+		}
+		.prev{
+			border: none;
+			background-color: orange;
+			color: white;
+			font-size: 35px;
+			position: absolute;
+			left: 0;
+			top: 40%;
+		}
+		button:hover{
+			background-color: red;
+			color: green;
+		}
+		button{
+			display: none;
+		}
+		.demo:hover button{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="demo">
+		<img src="a.jpg">
+		<button class="next" > &gt; </button>
+		<button class="prev" > &lt; </button>
+		
+	</div>
+
+</body>
+</html>
